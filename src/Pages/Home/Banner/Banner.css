@@ -1,0 +1,21 @@
+.bg-style{
+    background-image: url('https://i.ibb.co/b3L6nXm/images.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+   
+   
+}
+
+.banner-info{
+    padding: 120px;
+    color: rgb(160, 4, 64);
+}
+.banner-info h1{
+    font-size: 55px;
+    font-weight: 800px;
+}
+.banner-info p{
+    font-size: 18px;
+    
+}
