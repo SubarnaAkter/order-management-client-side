@@ -1,0 +1,13 @@
+.btn-regular{
+    background-color:rgb(202, 31, 88) ;
+    color: white;
+    padding:8px 25px;
+    border:0;
+    border:3px solid rgb(207, 30, 98);
+}
+.btn-regular:hover{
+    border:3px solid rgb(187, 34, 93);
+    background-color:rgb(177, 7, 106);
+  
+    font-weight: 700;
+}

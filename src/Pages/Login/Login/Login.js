@@ -16,7 +16,7 @@ const Login = () => {
     }
   
     return (
-        <div className=" text-center w-50 mx-auto p-3 pt-5">
+        <div className=" text-center w-75 mx-auto p-3 pt-5">
         
           <h1 className="pt-5 mt-5">Login</h1>
          
@@ -31,7 +31,7 @@ const Login = () => {
           {/* errors will return when field validation fails  */}
           {errors.email && <span className="text-danger pb-2 mb-3">This field is required</span>} <br />
           <p className="text-danger">{authError}</p>
-          <input className="btn btn-info rounded w-100 fw-bold mb-3" type="submit" /><br />
+          <input className="btn-regular  rounded w-100 fw-bold mb-3" type="submit" /><br />
         </form>
         <p className="text-white text-center">New to Shoeinverse?  <Link to="/register">Create an account</Link></p>
       </div>

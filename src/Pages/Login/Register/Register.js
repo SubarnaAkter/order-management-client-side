@@ -31,7 +31,7 @@ const Register = () => {
 
     return (
         <div>
-                <div  className="col-12 container col-md-6  p-5">
+                <div  className="col-12 container  p-5">
                   <div className=" register text-center bg-white w-75 mx-auto p-3 ">
                       <h1>Register</h1>
                    
@@ -48,7 +48,7 @@ const Register = () => {
                         {/* errors will return when field validation fails  */}
                         {errors.email && <span className="text-danger pb-2 mb-3">This field is required</span>} <br />
                         <p className="text-danger">{authError}</p>
-                        <input className="btn btn-info rounded w-100 fw-bold mb-3" type="submit" /><br />
+                        <input className=" btn-regular rounded w-100 fw-bold mb-3" type="submit" /><br />
                     </form>
                     <p className="text-white text-center">Already Registered?  <Link to="/login">Please Login</Link></p>
                  </div>
