@@ -7,7 +7,7 @@ const Shoes = () => {
     
     const size=10;
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://still-beyond-38528.herokuapp.com/products')
             .then(res => res.json())
             .then(data => {
                 setShoes(data);

@@ -11,7 +11,7 @@ const AllOrders = () => {
     const [pageCount, setPageCount] = useState(0);
     const size=25;
     useEffect(() => {
-        fetch(`http://localhost:5000/orders?page=${page}&&size=${size}`)
+        fetch(`https://still-beyond-38528.herokuapp.com/orders?page=${page}&&size=${size}`)
             .then(res => res.json())
             .then(data => {setAllOrders(data.orders)
                 const count=data.count;
@@ -26,7 +26,7 @@ const AllOrders = () => {
 
         setStatus(false)
 
-        fetch(`http://localhost:5000/orders/${id}`, {
+        fetch(`https://still-beyond-38528.herokuapp.com/orders/${id}`, {
             method: 'put',
             headers: {
                 'content-type': 'application/json'

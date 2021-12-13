@@ -11,7 +11,7 @@ const PlaceOrder = () => {
   const { user } = UseAuth()
 
   useEffect(() => {
-    fetch(`http://localhost:5000/products/${id}`)
+    fetch(`https://still-beyond-38528.herokuapp.com/products/${id}`)
       .then(res => res.json())
       .then(data => setOrders(data))
   }
@@ -19,7 +19,7 @@ const PlaceOrder = () => {
 
   const { register, handleSubmit,reset } = useForm();
   const onSubmit = data => {
-    fetch('http://localhost:5000/orders', {
+    fetch('https://still-beyond-38528.herokuapp.com/orders', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'
