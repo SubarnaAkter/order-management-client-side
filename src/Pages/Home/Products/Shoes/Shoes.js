@@ -5,22 +5,20 @@ import Shoe from '../Shoe/Shoe';
 const Shoes = () => {
     const [shoes, setShoes] = useState([]);
     
-    const size=10;
+    
     useEffect(() => {
         fetch('https://still-beyond-38528.herokuapp.com/products')
             .then(res => res.json())
             .then(data => {
                 setShoes(data);
                
-                // const count=data.count;
-                // const pageNumber=Math.ceil(count/size)
-                // setPagecount(pageNumber)
+             
             });
     }, []);
 
     return (
         <Container>
-            <h1>Available Shoes</h1>
+            <h1 className="text-center m-5 p-5">Available Shoes</h1>
             <Row xs={1} md={3} className="g-4">
                 {
                     shoes.map(shoe=><Shoe

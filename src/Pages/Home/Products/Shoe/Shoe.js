@@ -2,11 +2,13 @@ import React from 'react';
 import { Card, Col,Button   } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Shoe.css'
+import Zoom from 'react-reveal/Zoom';
 const Shoe = ({ shoe }) => {
     const {_id, productName, price, img, category } = shoe;
     return (
 
-        <Col>
+    <Zoom>
+            <Col >
             <Card>
                 <Card.Img variant="top" src={img} />
                 <Card.Body>
@@ -20,6 +22,7 @@ const Shoe = ({ shoe }) => {
                 </Card.Footer>
             </Card>
         </Col>
+    </Zoom>
 
     );
 };
